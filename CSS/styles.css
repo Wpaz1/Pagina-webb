@@ -1,0 +1,246 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to bottom right, #0a0a0a, #2d2d2d);
+    padding: 2rem 0;
+    position: relative;
+}
+
+.sombra {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem 0;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__nombre {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.logo_negrita {
+    color: #0070d1;
+}
+
+.navegacion a {
+    margin-right: 2rem;
+    font-size: 1.1rem;
+}
+
+.navegacion__enlace:hover {
+    color: #0070d1;
+}
+
+/* Main content */
+.blog {
+    margin-top: 2rem;
+}
+
+h3 {
+    margin-bottom: 1.5rem;
+}
+
+.entrada {
+    display: flex;
+    margin-bottom: 2rem;
+    background-color: #2c2c2c;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.entrada img {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    margin-right: 1.5rem;
+}
+
+.entrada__contenido h4 {
+    color: #0070d1;
+}
+
+.boton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.boton--primario {
+    background-color: #0070d1;
+}
+
+.boton--secundario {
+    background-color: #444;
+}
+
+.boton:hover {
+    background-color: #005bb5;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #2c2c2c;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.paquetes__titulo {
+    margin-bottom: 1.5rem;
+}
+
+.paquetes--titulo__etiqueta {
+    color: #0070d1;
+}
+
+/* Footer */
+.footer {
+    background-color: #0a0a0a;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer .logo__nombre {
+    font-size: 1.8rem;
+}
+
+.navegacion--secundaria a {
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+/* Estilo general para las imágenes */
+.imagen {
+    text-align: center; /* Centrar las imágenes */
+    margin: 20px auto; /* Espaciado uniforme alrededor */
+    max-width: 100%; /* Asegura que no superen el contenedor */
+    display: block; /* Para que se alineen como elementos de bloque */
+}
+
+.imagen img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados como opción estética */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Ajustes adicionales si es necesario para el tamaño en pantallas grandes */
+@media (min-width: 768px) {
+    .imagen img {
+        max-width: 400px; /* Limitar el tamaño en pantallas grandes */
+    }
+}
+body {
+    background-color: #003087;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header__texto h2 {
+    font-size: 2rem;
+}
+
+.header__texto p {
+    font-size: 1.2rem;
+}
+
+.contacto__contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contacto__titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contacto__formulario {
+    width: 100%;
+    max-width: 400px;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.formulario input[type="text"], 
+.formulario input[type="email"],
+.formulario input[type="month"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+.formulario input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0070d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.formulario input[type="button"]:hover {
+    background-color: #005bb5;
+}
+
+#mensajeEstado {
+    text-align: center;
+    margin-top: 20px;
+    color: #f00;
+    font-size: 1rem;
+}
